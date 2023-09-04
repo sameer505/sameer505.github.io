@@ -1,7 +1,14 @@
+function windowresized() {
+  resizeCanvas(windowWidth, windowHeight);
+  console.log("resized");
+}
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
+  background(220);
 }
 
 function draw() {
-  background(220);
+  fill(random(0,255),random(0,255),random(0,255));
+  ellipse(random(0,windowWidth),random(0,windowHeight), 80, 80);
+
 }
